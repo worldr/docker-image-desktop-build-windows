@@ -24,7 +24,7 @@ jobs:
         run:  docker login --username $DOCKER_REGISTRY_USERNAME --password ${{secrets.DOCKER_HUB_PASSWORD}}
       - name: Build the LaTeX image.
         run: |
-          docker build -t ${REGISTRY_PATH}/desktop-build-windows:${RELEASE_TAG} -t ${REGISTRY_PATH}/latex:latest -f Dockerfile .
+          docker build -t ${REGISTRY_PATH}/desktop-build-windows:${RELEASE_TAG} -t ${REGISTRY_PATH}/desktop-build-windows:latest -f Dockerfile .
       - name: Release LaTeX image.
         run: |
           docker push ${REGISTRY_PATH}/desktop-build-windows:${RELEASE_TAG}

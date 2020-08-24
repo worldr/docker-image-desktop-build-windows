@@ -1,8 +1,8 @@
-# Docker image LaTeX
+# Docker image MS Windows
 
 ## Description
 
-Docker image for LaTeX builds.
+Docker image for MS Windows builds.
 
 + Based of `windows/servercore:ltsc2019`.
 + Contains:
