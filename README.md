@@ -17,6 +17,16 @@ Docker image for MS Windows builds.
   + flutter
   + hover-shim
 
+## Build and test image locally
+
+Run
+
+```bash
+docker build -t worldr/desktop-build-windows:latest .
+```
+
+Then fix whatever did not compile correctly ☺.
+
 ## Release
 
 The Way Of Gitops tells us *this should be a GitHub action…* And we are: just
